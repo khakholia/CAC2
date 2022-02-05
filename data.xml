@@ -1,0 +1,20 @@
+<CHRIST>
+    <COMPUTER-SCIENCE>
+        <STU-NAME>Akash</STU-NAME>
+        <STU-UNIVERSITY>Delhi University</STU-UNIVERSITY>
+        <STU-PHONE>1234567890</STU-PHONE>
+        <STU-EMAIL>akash@du.in</STU-EMAIL>
+    </COMPUTER-SCIENCE>
+    <COMPUTER-SCIENCE>
+        <STU-NAME>Ram</STU-NAME>
+        <STU-UNIVERSITY>Guwahati University</STU-UNIVERSITY>
+        <STU-PHONE>1234567890</STU-PHONE>
+        <STU-EMAIL>ram@gu.in</STU-EMAIL>
+    </COMPUTER-SCIENCE>
+    <COMPUTER-SCIENCE>
+        <STU-NAME>Dipanshu</STU-NAME>
+        <STU-UNIVERSITY>Royal Global University</STU-UNIVERSITY>
+        <STU-PHONE>1234567890</STU-PHONE>
+        <STU-EMAIL>dipanshu@rgu.in</STU-EMAIL>
+    </COMPUTER-SCIENCE>
+</CHRIST>
