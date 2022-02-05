@@ -99,10 +99,10 @@
           </div>
           <button onclick="validate()" class="btn btn-primary">Submit</button>
           <div class="row m-0 p-0 justify-content-center text-center">
-              <div class="col m-0 p-0">
-                <h5>Student Details</h5>
-                <div id="table-data"></div>
-              </div>
+            <div class="col m-0 p-0">
+              <h5>Student Details</h5>
+              <div id="table-data"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -129,6 +129,8 @@
 
           localStorage.setItem("phone", phone.value);
           localStorage.setItem("email", email.value);
+
+          addData(name1.value,college.value, phone.value,email.value)
         }
       }
       var name1 = document.getElementById("name1");
@@ -314,10 +316,8 @@
       var data = getData();
 
       function displayData() {
-
         var tableData = "";
         tableData +=
-          
           "<table class='table'>" +
           "<thead> <tr>" +
           '<th scope="col">Name</th>' +
@@ -336,7 +336,8 @@
             "<td scope='col'>" +
             data
               .getElementsByTagName("COMPUTER-SCIENCE")
-              [i].getElementsByTagName("STU-UNIVERSITY")[0].firstChild.nodeValue +
+              [i].getElementsByTagName("STU-UNIVERSITY")[0].firstChild
+              .nodeValue +
             "</td>" +
             "</tr>";
         }
@@ -345,7 +346,33 @@
 
         document.getElementById("table-data").innerHTML = tableData;
       }
-      displayData()
+      displayData();
+
+      function addData(name, university, phone, email) {
+        var details = [];
+
+        rootElement = data.createElement("COMPUTER-SCIENCE");
+        details[0] = data.createElement("STU-NAME");
+        details[0].appendChild(data.createTextNode(name));
+        rootElement.appendChild(details[0]);
+        
+        details[1] = data.createElement("STU-UNIVERSITY");
+        details[1].appendChild(data.createTextNode(university));
+        rootElement.appendChild(details[1]);
+
+        details[2] = data.createElement("STU-PHONE");
+        details[2].appendChild(data.createTextNode(phone));
+        rootElement.appendChild(details[2]);
+
+        details[3] = data.createElement("STU-EMAIL");
+        details[3].appendChild(data.createTextNode(email));
+        rootElement.appendChild(details[3]);
+        
+
+        data.documentElement.appendChild(rootElement);
+
+        displayData()
+      }
     </script>
   </body>
 </html>
