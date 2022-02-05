@@ -1,275 +1,299 @@
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
     <title>Gateways 2022</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header style="background-color: black" class="text-white p-4 text-center">
-        <h1>Technovid</h1>
+      <h1>Technovid</h1>
     </header>
     <div class="row m-0 p-3 justify-content-center">
-        <h5>Registration Form</h5>
+      <h5>Registration Form</h5>
     </div>
     <div class="row m-0 p-0 justify-content-center">
-        <div class="col-8">
-            <div class="m-4">
-                <div class="form-group">
-                    <label for="name1">Name</label>
-                    <input type="text" class="form-control" id="name1" />
-                    <small id="nameHelp" class="form-text text-muted"></small>
-                </div>
+      <div class="col-8">
+        <div class="m-4">
+          <div class="form-group">
+            <label for="name1">Name</label>
+            <input type="text" class="form-control" id="name1" />
+            <small id="nameHelp" class="form-text text-muted"></small>
+          </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" class="form-control" id="email" />
-                    <small id="emailHelp" class="form-text text-muted"></small>
-                </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" />
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
 
-                <div class="form-group">
-                    <label for="branch">Branch</label>
-                    <input type="text" class="form-control" id="branch" />
-                    <small id="branchHelp" class="form-text text-muted"></small>
-                </div>
+          <div class="form-group">
+            <label for="branch">Branch</label>
+            <input type="text" class="form-control" id="branch" />
+            <small id="branchHelp" class="form-text text-muted"></small>
+          </div>
 
-                <div class="form-group">
-                    <label for="college">College/University</label>
-                    <input type="text" class="form-control" id="college" />
-                    <small id="collegeHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group">
-                    <label for="state">State</label>
-                    <input type="text" class="form-control" id="state" />
-                    <small id="stateHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group">
-                    <label for="address">Address</label>
-                    <textarea type="text" class="form-control" id="address"></textarea>
-                    <small id="addressHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group">
-                    <label for="age">Age</label>
-                    <input type="text" class="form-control" id="age" />
-                    <small id="ageHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" class="form-control" id="phone" />
-                    <small id="phoneHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" />
-                    <small id="usernameHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" />
-                    <small id="passwordLc" class="form-text" style="color: red">1 Lower Case</small>
-                    <small id="passwordUc" class="form-text" style="color: red">1 Upper Case</small>
-                    <small id="passwordNc" class="form-text" style="color: red">1 Numeric</small>
-                    <small id="passwordSc" class="form-text" style="color: red">1 Special Character
-                        (~`!@#$%^&amp;*()-_+={}[]|\;:&quot;&lt;&gt;,./?)</small>
-                </div>
-                <button onclick="validate()" class="btn btn-primary">Submit</button>
-            </div>
+          <div class="form-group">
+            <label for="college">College/University</label>
+            <input type="text" class="form-control" id="college" />
+            <small id="collegeHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" class="form-control" id="state" />
+            <small id="stateHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea type="text" class="form-control" id="address"></textarea>
+            <small id="addressHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id="age" />
+            <small id="ageHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" class="form-control" id="phone" />
+            <small id="phoneHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" />
+            <small id="usernameHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" />
+            <small id="passwordLc" class="form-text" style="color: red"
+              >1 Lower Case</small
+            >
+            <small id="passwordUc" class="form-text" style="color: red"
+              >1 Upper Case</small
+            >
+            <small id="passwordNc" class="form-text" style="color: red"
+              >1 Numeric</small
+            >
+            <small id="passwordSc" class="form-text" style="color: red"
+              >1 Special Character
+              (~`!@#$%^&amp;*()-_+={}[]|\;:&quot;&lt;&gt;,./?)</small
+            >
+          </div>
+          <button onclick="validate()" class="btn btn-primary">Submit</button>
+          <div class="row m-0 p-0 justify-content-center text-center">
+              <div class="col m-0 p-0">
+                <h5>Student Details</h5>
+                <div id="table-data"></div>
+              </div>
+          </div>
         </div>
+      </div>
     </div>
     <script>
-        function validate(e){
-            if(!name1.value||!email.value||!branch.value||
-            !college.value||!state.value||!address.value||
-            !age.value||!phone.value||!username.value||!password.value){
-                alert('All the fields are required.')
-                return
-            }else{
-                document.cookie="username="+username.value
-                document.cookie="email="+email.value
+      function validate(e) {
+        if (
+          !name1.value ||
+          !email.value ||
+          !branch.value ||
+          !college.value ||
+          !state.value ||
+          !address.value ||
+          !age.value ||
+          !phone.value ||
+          !username.value ||
+          !password.value
+        ) {
+          alert("All the fields are required.");
+          return;
+        } else {
+          document.cookie = "username=" + username.value;
+          document.cookie = "email=" + email.value;
 
-                localStorage.setItem('phone',phone.value)
-                localStorage.setItem('email',email.value)
-            }
+          localStorage.setItem("phone", phone.value);
+          localStorage.setItem("email", email.value);
         }
-        var name1 = document.getElementById("name1");
-        var email = document.getElementById("email");
-        var branch = document.getElementById("branch");
-        var college = document.getElementById("college");
-        var state = document.getElementById("state");
-        var address = document.getElementById("address");
-        var age = document.getElementById("age");
-        var phone = document.getElementById("phone");
-        var username = document.getElementById("username");
-        var password = document.getElementById("password");
-
-        // name validation
-        name1.oninput =name1.onblur = function () {
-            var regex = /[^a-z]/gi;
-            name1.value = name1.value.replace(regex, "");
-            if (!name1.value) {
-                document.getElementById("nameHelp").innerText =
-                    "Please enter a valid name.";
-                name1.focus();
-            }else{
-                document.getElementById("nameHelp").innerText =
-                    "";
-            }
-        };
-
-        //branch validation
-        branch.onblur=branch.oninput=function(){
-            if (!branch.value) {
-                document.getElementById("branchHelp").innerText =
-                    "Please enter a valid branch.";
-                branch.focus();
-            }else{
-                document.getElementById("branchHelp").innerText =
-                    "";
-            } 
-        }
-        //college validation
-        college.onblur=college.oninput=function(){
-            if (!college.value) {
-                document.getElementById("collegeHelp").innerText =
-                    "Please enter a valid college.";
-                    college.focus();
-            }else{
-                document.getElementById("collegeHelp").innerText =
-                    "";
-            } 
-        }
-        //state validation
-        state.onblur=state.oninput=function(){
-            if (!state.value) {
-                document.getElementById("stateHelp").innerText =
-                    "Please enter a valid state.";
-                    state.focus();
-            }else{
-                document.getElementById("stateHelp").innerText =
-                    "";
-            } 
-        }
-        //address validation
-        address.onblur=address.oninput=function(){
-            if (!address.value) {
-                document.getElementById("addressHelp").innerText =
-                    "Please enter a valid address.";
-                    address.focus();
-            }else{
-                document.getElementById("addressHelp").innerText =
-                    "";
-            } 
-        }
-
-        // phone validation
-        phone.oninput = phone.onblur = function () {
-            var regex = /[^0-9]/gi;
-            phone.value = phone.value.replace(regex, "");
-
-            if (phone.value.length > 10) phone.value = phone.value.slice(0, 10);
-            if (phone.value.length != 10) {
-                document.getElementById("phoneHelp").innerText =
-                    "Please enter a valid phone.";
-                phone.focus();
-            } else {
-                document.getElementById("phoneHelp").innerText =
-                    "";
-            }
-        };
-
-        //age validation
-        age.onblur = age.oninput= function () {
-            var regex = /[^0-9]/gi;
-            age.value = age.value.replace(regex, "");
-            if (age.value < 1) {
-                document.getElementById("ageHelp").innerText =
-                    "Please enter a valid age.";
-                age.focus();
-            } else {
-                document.getElementById("ageHelp").innerText = "";
-            }
-        };
-
-        // email validation
-        var emailReg =
-            /^\w+([\.-]?\w+)+@(christuniversity.in|christuniversity.com)$/;
-        email.onblur = email.oninput = function () {
-            if (!emailReg.test(email.value)) {
-                document.getElementById("emailHelp").innerText =
-                    "Please enter a valid eMail.";
-                email.focus();
-            } else {
-                document.getElementById("emailHelp").innerText = "";
-            }
-        };
-        // username validation
-        username.onblur = username.oninput = function () {
-            if (username.value.length < 1) {
-                document.getElementById("usernameHelp").innerText =
-                    "Please enter a valid username.";
-                username.focus();
-            } else {
-                document.getElementById("usernameHelp").innerText = "";
-                username.value =
-                    "" +
-                    username.value.substring(0, 1).toUpperCase() +
-                    username.value.substring(1);
-            }
-        };
-
-    //   password validation
-      var lcaseReg=/^(?=.*[a-z])/
-      var ucaseReg=/^(?=.*[A-Z])/
-      var numReg=/^(?=.*\d)/
-      var spReg=/^(?=.*[&*()\-~`!@#$%^_+={}[\]\\|;/:"<>,.?])/
-      
-      password.onblur = password.oninput=function(){
-          var c1=c2=c3=c4=false
-          if(lcaseReg.test(password.value)){
-              document.getElementById("passwordLc").style.color="green"
-              c1=true
-          }else{
-            document.getElementById("passwordLc").style.color="red"
-              c1=false
-          }
-          if(ucaseReg.test(password.value)){
-              document.getElementById("passwordUc").style.color="green"
-              c2=true
-          }else{
-            document.getElementById("passwordUc").style.color="red"
-              c2=false
-          }
-          if(numReg.test(password.value)){
-              document.getElementById("passwordNc").style.color="green"
-              c3=true
-          }else{
-            document.getElementById("passwordNc").style.color="red"
-              c3=false
-          }
-          if(spReg.test(password.value)){
-              document.getElementById("passwordSc").style.color="green"
-              c4=true
-          }else{
-            document.getElementById("passwordSc").style.color="red"
-              c4=false
-          }
-          if(!(c1&&c2&&c3&&c4)){
-            password.focus()
-          }
       }
+      var name1 = document.getElementById("name1");
+      var email = document.getElementById("email");
+      var branch = document.getElementById("branch");
+      var college = document.getElementById("college");
+      var state = document.getElementById("state");
+      var address = document.getElementById("address");
+      var age = document.getElementById("age");
+      var phone = document.getElementById("phone");
+      var username = document.getElementById("username");
+      var password = document.getElementById("password");
+
+      // name validation
+      name1.oninput = name1.onblur = function () {
+        var regex = /[^a-z]/gi;
+        name1.value = name1.value.replace(regex, "");
+        if (!name1.value) {
+          document.getElementById("nameHelp").innerText =
+            "Please enter a valid name.";
+          name1.focus();
+        } else {
+          document.getElementById("nameHelp").innerText = "";
+        }
+      };
+
+      //branch validation
+      branch.onblur = branch.oninput = function () {
+        if (!branch.value) {
+          document.getElementById("branchHelp").innerText =
+            "Please enter a valid branch.";
+          branch.focus();
+        } else {
+          document.getElementById("branchHelp").innerText = "";
+        }
+      };
+      //college validation
+      college.onblur = college.oninput = function () {
+        if (!college.value) {
+          document.getElementById("collegeHelp").innerText =
+            "Please enter a valid college.";
+          college.focus();
+        } else {
+          document.getElementById("collegeHelp").innerText = "";
+        }
+      };
+      //state validation
+      state.onblur = state.oninput = function () {
+        if (!state.value) {
+          document.getElementById("stateHelp").innerText =
+            "Please enter a valid state.";
+          state.focus();
+        } else {
+          document.getElementById("stateHelp").innerText = "";
+        }
+      };
+      //address validation
+      address.onblur = address.oninput = function () {
+        if (!address.value) {
+          document.getElementById("addressHelp").innerText =
+            "Please enter a valid address.";
+          address.focus();
+        } else {
+          document.getElementById("addressHelp").innerText = "";
+        }
+      };
+
+      // phone validation
+      phone.oninput = phone.onblur = function () {
+        var regex = /[^0-9]/gi;
+        phone.value = phone.value.replace(regex, "");
+
+        if (phone.value.length > 10) phone.value = phone.value.slice(0, 10);
+        if (phone.value.length != 10) {
+          document.getElementById("phoneHelp").innerText =
+            "Please enter a valid phone.";
+          phone.focus();
+        } else {
+          document.getElementById("phoneHelp").innerText = "";
+        }
+      };
+
+      //age validation
+      age.onblur = age.oninput = function () {
+        var regex = /[^0-9]/gi;
+        age.value = age.value.replace(regex, "");
+        if (age.value < 1) {
+          document.getElementById("ageHelp").innerText =
+            "Please enter a valid age.";
+          age.focus();
+        } else {
+          document.getElementById("ageHelp").innerText = "";
+        }
+      };
+
+      // email validation
+      var emailReg =
+        /^\w+([\.-]?\w+)+@(christuniversity.in|christuniversity.com)$/;
+      email.onblur = email.oninput = function () {
+        if (!emailReg.test(email.value)) {
+          document.getElementById("emailHelp").innerText =
+            "Please enter a valid eMail.";
+          email.focus();
+        } else {
+          document.getElementById("emailHelp").innerText = "";
+        }
+      };
+      // username validation
+      username.onblur = username.oninput = function () {
+        if (username.value.length < 1) {
+          document.getElementById("usernameHelp").innerText =
+            "Please enter a valid username.";
+          username.focus();
+        } else {
+          document.getElementById("usernameHelp").innerText = "";
+          username.value =
+            "" +
+            username.value.substring(0, 1).toUpperCase() +
+            username.value.substring(1);
+        }
+      };
+
+      //   password validation
+      var lcaseReg = /^(?=.*[a-z])/;
+      var ucaseReg = /^(?=.*[A-Z])/;
+      var numReg = /^(?=.*\d)/;
+      var spReg = /^(?=.*[&*()\-~`!@#$%^_+={}[\]\\|;/:"<>,.?])/;
+
+      password.onblur = password.oninput = function () {
+        var c1 = (c2 = c3 = c4 = false);
+        if (lcaseReg.test(password.value)) {
+          document.getElementById("passwordLc").style.color = "green";
+          c1 = true;
+        } else {
+          document.getElementById("passwordLc").style.color = "red";
+          c1 = false;
+        }
+        if (ucaseReg.test(password.value)) {
+          document.getElementById("passwordUc").style.color = "green";
+          c2 = true;
+        } else {
+          document.getElementById("passwordUc").style.color = "red";
+          c2 = false;
+        }
+        if (numReg.test(password.value)) {
+          document.getElementById("passwordNc").style.color = "green";
+          c3 = true;
+        } else {
+          document.getElementById("passwordNc").style.color = "red";
+          c3 = false;
+        }
+        if (spReg.test(password.value)) {
+          document.getElementById("passwordSc").style.color = "green";
+          c4 = true;
+        } else {
+          document.getElementById("passwordSc").style.color = "red";
+          c4 = false;
+        }
+        if (!(c1 && c2 && c3 && c4)) {
+          password.focus();
+        }
+      };
     </script>
     <script>
-        function getData(type) {
+      function getData() {
         var req;
         if (window.XMLHttpRequest) {
           req = new XMLHttpRequest();
@@ -287,9 +311,41 @@
         req.send();
         return req.responseXML;
       }
-      var data = null;
-      
-    </script>
-</body>
+      var data = getData();
 
+      function displayData() {
+
+        var tableData = "";
+        tableData +=
+          
+          "<table class='table'>" +
+          "<thead> <tr>" +
+          '<th scope="col">Name</th>' +
+          '<th scope="col">University</th>' +
+          "</tr> </thead> <tbody><tr>";
+        var loop = data.getElementsByTagName("COMPUTER-SCIENCE").length;
+
+        for (i = 0; i < loop; i++) {
+          tableData +=
+            "<tr>" +
+            "<td scope='col'>" +
+            data
+              .getElementsByTagName("COMPUTER-SCIENCE")
+              [i].getElementsByTagName("STU-NAME")[0].firstChild.nodeValue +
+            "</td>" +
+            "<td scope='col'>" +
+            data
+              .getElementsByTagName("COMPUTER-SCIENCE")
+              [i].getElementsByTagName("STU-UNIVERSITY")[0].firstChild.nodeValue +
+            "</td>" +
+            "</tr>";
+        }
+
+        tableData += "</tr></tbody></table>";
+
+        document.getElementById("table-data").innerHTML = tableData;
+      }
+      displayData()
+    </script>
+  </body>
 </html>
